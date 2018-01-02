@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta name="author" content="Sebastian Kuźmiński">
     <meta name="description" content="Portfolio początkującego front-end developera, Sebastiana Kuźmińskiego">
-    <title>Sebastian Kuźmiński portfolio</title>
+    <title>Panel logowania</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
+    <button type="button" title="Open menu" class="hamburger"><i class="fa fa-bars" aria-hidden="true"></i></button>
     <nav class="nav">
         <div class="nav-wrapper">
             <div class="nav-card">
@@ -34,12 +35,12 @@
             </ul>
             <ul class="nav-social">
                 <li class="social-item">
-                    <a class="social-link" href="www.facebook.pl" target="_blank" title="Facebook"><span class="fa fa-facebook social-icon animated" aria-hidden="true" aria-label="Faceboook"></span></a>
+                    <a class="social-link" href="https://www.facebook.com/profile.php?id=100009522993883" target="_blank" title="Facebook"><span class="fa fa-facebook social-icon animated" aria-hidden="true" aria-label="Facebook"></span></a>
                 </li>
                 <li class="social-item">
-                    <a class="social-link" href="www.github.com" target="_blank" title="serv"><span class="fa fa-github social-icon animated" aria-hidden="true" aria-label="Github"></span></a>
+                    <a class="social-link" href="www.github.com" target="_blank" title="github"><span class="fa fa-github social-icon animated" aria-hidden="true" aria-label="Github"></span></a>
                 </li>
-                <li class="social">
+                <li class="social-item-email">
                     <a class="social-email animated" href="mailto:kuzminski91@gmail.com">
                     kuzminski91@gmail.com</a>
                 </li>
@@ -48,15 +49,18 @@
     </nav>
     <main class="about">
         <div class="wrapper">
-            <div class="content about-content">
-                <header>
-
+            <div class="content">
+                <header class="about-header">
+                    <div class="portrait-center">
+                        <img class="portrait" src="img/portrait.jpg" alt="">
+                        <a class="cv-link" href="https://drive.google.com/open?id=1Dw7whsulk7IfCaakLw0fmhiuGjW8bagY" target="_blank" title="curriculum vitae">Pobierz CV</a>
+                    </div>
+                    <p class="about-text">Nazywam się Sebastian, skończyłem informatykę na UWM w Olsztynie i jestem początkującym front-end developerem. Jednym z moich największych atutów jest duża chęć do nauki oraz zaangażowanie w wykonywaną pracę. W swoich projektach używam HTML, CSS oraz JavaScript. Pojęcia takie jak RWD, jQuery, Sass, Bootstrap, WordPress oraz Photoshop nie są mi obce! Chętnie nabiorę komercyjnego doświadczenia, a moim głównym celem jest opanowanie języka JavaScript w stopniu bardzo dobrym.</p>
                 </header>
             </div>
         </div>
     </main>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
 </body>
 
 </html>

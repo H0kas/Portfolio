@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta name="author" content="Sebastian Kuźmiński">
     <meta name="description" content="Portfolio początkującego front-end developera, Sebastiana Kuźmińskiego">
-    <title>Sebastian Kuźmiński portfolio</title>
+    <title>Panel logowania</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
+    <button type="button" title="Open menu" class="hamburger"><i class="fa fa-bars" aria-hidden="true"></i></button>
     <nav class="nav">
         <div class="nav-wrapper">
             <div class="nav-card">
@@ -23,7 +24,7 @@
             </div>
             <ul class="nav-list">
                 <li class="list-item animated">
-                    <a class="list-link" href="index.html">Strona Główna</a>
+                    <a class="list-link " href="index.html">Strona Główna</a>
                 </li>
                 <li class="list-item">
                     <a class="list-link list-link-active" href="#">Projekty</a>
@@ -34,12 +35,12 @@
             </ul>
             <ul class="nav-social">
                 <li class="social-item">
-                    <a class="social-link" href="www.facebook.pl" target="_blank" title="Facebook"><span class="fa fa-facebook social-icon animated" aria-hidden="true" aria-label="Faceboook"></span></a>
+                    <a class="social-link" href="https://www.facebook.com/profile.php?id=100009522993883" target="_blank" title="Facebook"><span class="fa fa-facebook social-icon animated" aria-hidden="true" aria-label="Faceboook"></span></a>
                 </li>
                 <li class="social-item">
-                    <a class="social-link" href="www.github.com" target="_blank" title="serv"><span class="fa fa-github social-icon animated" aria-hidden="true" aria-label="Github"></span></a>
+                    <a class="social-link" href="www.github.com" target="_blank" title="github"><span class="fa fa-github social-icon animated" aria-hidden="true" aria-label="Github"></span></a>
                 </li>
-                <li class="social">
+                <li class="social-item-email">
                     <a class="social-email animated" href="mailto:kuzminski91@gmail.com">
                     kuzminski91@gmail.com</a>
                 </li>
@@ -48,19 +49,56 @@
     </nav>
     <main class="project">
         <div class="wrapper">
-            <div class="content project-content">
-                <header>
-                    <h1 class="project-header-text">Moje realizacje</h1>
-                </header>
-                <section>
-
-
-                </section>
+            <div class="content">
+                <div class="projects">
+                    <ul class="projects-list">
+                        <li>
+                            <img src="img/masteralb.jpg" alt="img1">
+                            <div class="overlay">
+                                <a class="slider-link" href="https://www.google.pl/" target="_blank" title="live">LIVE</a>
+                                <a class="slider-link" href="https://www.onet.pl/" target="_blank" title="code">KOD</a>
+                                <p class="slider-text">PSD to HTML<br>technologie: HTML, CSS, JS</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/treehouse.jpg" alt="img2">
+                            <div class="overlay">
+                                <a class="slider-link" href="https://www.google.pl/" target="_blank" title="live">LIVE</a>
+                                <a class="slider-link" href="https://www.onet.pl/" target="_blank" title="kod">KOD</a>
+                                <p class="slider-text">PSD to HTML<br>technologie: HTML, CSS, JS</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="slider">
+                    <a href="#" class="control_next">></a>
+                    <a href="#" class="control_prev">
+                        <</a>
+                            <ul class="slider-list">
+                                <li>
+                                    <img src="img/masteralb.jpg" alt="img1">
+                                    <div class="overlay">
+                                        <a class="slider-link" href="https://www.google.pl/" target="_blank" title="live">LIVE</a>
+                                        <a class="slider-link" href="https://www.onet.pl/" target="_blank" title="kod">KOD</a>
+                                        <p class="slider-text">PSD to HTML<br>technologie: HTML, CSS, JS</p>
+                                    </div>
+                                </li>
+                                <li><img src="img/treehouse.jpg" alt="img2">
+                                    <div class="overlay">
+                                        <a class="slider-link" href="https://www.google.pl/" target="_blank" title="live">LIVE</a>
+                                        <a class="slider-link" href="https://www.onet.pl/" target="_blank" title="kod">KOD</a>
+                                        <p class="slider-text">PSD to HTML<br>technologie: HTML, CSS, JS</p>
+                                    </div>
+                                </li>
+                            </ul>
+                </div>
+                <div class="slider-shadow"></div>
             </div>
         </div>
     </main>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script type="text/javascript" src="js/script2.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/slider.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
 </body>
 
 </html>
